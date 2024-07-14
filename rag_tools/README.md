@@ -5,6 +5,7 @@ The RAG (Retrieval-Augmented Generation) Knowledge Base Script is designed to au
 ## Features
 
 - **Document Ingestion:** Automatically ingest multiple documents from a specified directory.
+- **Pdf support:** Added support for pdf's included scanned books, using PyMuPDF, Pillow and pytesseract.
 - **Vectorization:** Convert textual information into a vector format suitable for AI models.
 - **Blockchain Integration:** Seamlessly integrates with the Galadriel L1 chain, leveraging its Oracle system for decentralized storage and retrieval.
 - **IPFS Support:** Uses IPFS (InterPlanetary File System) for secure and distributed document storage.
@@ -30,11 +31,14 @@ To set up your environment for running the RAG Knowledge Base Script, follow the
     ```shell
     pip install -r requirements.txt
     ```
+    Download the Tesseract installer, run the installer and follow the prompts
+    https://tesseract-ocr.github.io/tessdoc/Installation.html
 4. Create a `.env` file and add your `pinata.cloud` API key and wallet private key as follows:
     ```plaintext
     ORACLE_ADDRESS=galadriel_oracle_address
     PRIVATE_KEY=your_wallet_private key
     PINATA_API_KEY=your_api_key_here
+    TESSERACT_PATH=the_path_to_Tesseract-OCR\tesseract.exe
     ```
 
 ## How to Use
