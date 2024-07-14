@@ -1,4 +1,4 @@
-# Knowledge Base Ingestion
+# Knowledge Base  with added pdf support
 
 The RAG (Retrieval-Augmented Generation) Knowledge Base Script is designed to automate the process of ingesting documents into a knowledge base, converting them into a vectorized format, and storing this information on the Galadriel chain. This script simplifies the process of creating a decentralized, blockchain-based knowledge base that can be queried and utilized by AI models for enhanced information retrieval and decision-making processes.
 
